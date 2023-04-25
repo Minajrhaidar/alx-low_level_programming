@@ -1,27 +1,40 @@
+#include "main.h"
 #include <stdio.h>
 /**
- * add - Adds two integers and returns the result
- * @a: First integer
- * @b: Second integer
- *
- * Return: Sum of a and b
+ * print_to_98 - prints all numbers from a given integer up to 98
+ * @n: the starting integer
+ * Return: void
  */
 void print_to_98(int n)
 {
-int i;
-if (n <= 98
+if (n <= 98)
 {
-for (i = n; i < 98; i++)
+for (; n <= 98; n++)
+if (n == 98)
 {
-printf("%d, ", i);
+printf("%d", n);
+printf("\n");
+break;
+}
+else
+{
+printf("%d, ", n);
+}
 }
 }
 else
 {
-for (i = n; i > 98; i--)
+for (; n >= 98; n--)
 {
-printf("%d, ", i);
+if (n == 98)
+{
+printf("%d", n);
+printf("\n");
+break;
+}
+else
+{
+printf("%d, ", n);
 }
 }
-printf("98\n");
 }
