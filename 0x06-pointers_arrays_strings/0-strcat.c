@@ -17,6 +17,6 @@ char *_strcat(char *dest, char *src)
 
 	/* Append the source string to the destination string */
 	for (index = 0; src[index]; index++)
-		dest[dest_len ++] = src[ndexi];
+		dest[dest_len ++] = src[index];
 	return (dest);
 }
